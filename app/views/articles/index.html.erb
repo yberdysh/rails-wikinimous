@@ -1,11 +1,13 @@
 <h1>Wikinimous Articles </h1>
 
-  <%= link_to "Add a new article", new_article_path %>
+  <%= link_to "Add a new article", new_article_path, class: "btn btn-lg btn-primary" %>
 
   <% @articles.each do |article| %>
     <h2> <%=link_to article.title, article_path(article) %></h2>
     <p><%= article.content.first(150) %></p>
-    <p><%= link_to "Edit", edit_article_path(article) %></p>
-    <p><%= link_to "Delete", article_path(article), method: :delete, data: { confirm: "Are you sure?"} %></p>
+    <div class="buttons">
+      <p><%= link_to "Edit", edit_article_path(article), class: "btn btn-warning" %>
+      <%= link_to "Delete", article_path(article), class: "btn btn-danger", method: :delete, data: { confirm: "Are you sure?"} %></p>
+    </div>
     <br>
   <% end %>

@@ -1,9 +1,13 @@
 <div class="form">
   <%= form_for @article do |f| %>
+  <div class="form-group">
     <%= f.label :title, "Enter article title: "%>
-    <%= f.text_field :title, placeholder: "So Long and Thanks For All the Fish" %>
+    <%= f.text_field :title, placeholder: "So Long and Thanks For All the Fish", class: 'form-control' %>
+  </div>
+  <div class="form-group">
     <%= f.label :content, "Write your article: "%>
-    <%= f.text_field :content %>
-    <%= f.submit %>
+    <%= f.text_area :content, class: 'form-stuff form-control' %>
+  </div>
+    <%= f.submit "Submit", class: "btn btn-success"%>
   <% end  %>
 </div>

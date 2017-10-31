@@ -1,3 +1,47 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-image: url("https://images.unsplash.com/photo-1490006043117-7d3126a1c887?auto=format&fit=crop&w=1950&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.container {
+  background-color: rgba(228, 223, 225, 0.8);
+  width: 900px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.buttons {
+  display: inline;
+}
+
+a {
+  font-family: 'Rozha One', serif;
+  font-size: 25px;
+}
+
+h1 {
+  font-family:'Pacifico', cursive;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Rozha One', serif;
+  color: #726C67;
+}
+
+.form {
+  height: 100vh;
+}
+
+.form-stuff {
+  height: 75vh!important;
+  resize: none;
+}
+
