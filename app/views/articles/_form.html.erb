@@ -1,0 +1,9 @@
+<div class="form">
+  <%= form_for @article do |f| %>
+    <%= f.label :title, "Enter article title: "%>
+    <%= f.text_field :title, placeholder: "So Long and Thanks For All the Fish" %>
+    <%= f.label :content, "Write your article: "%>
+    <%= f.text_field :content %>
+    <%= f.submit %>
+  <% end  %>
+</div>

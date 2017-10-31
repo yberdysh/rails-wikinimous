@@ -6,5 +6,5 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
     10.times do
-      Article.create(title: Faker::HitchhikersGuideToTheGalaxy.quote, content: Faker::Lorem.paragraphs)
+      Article.create(title: Faker::HitchhikersGuideToTheGalaxy.quote, content: Faker::Lorem.paragraphs.join)
     end
